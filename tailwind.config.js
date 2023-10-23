@@ -8,16 +8,17 @@ export default {
   theme: {
     extend: {
       colors:{
-        'bg-custonred':'#F03E42',
-        'bg-customyellow':'#FFC403',
-        'bg-customgreen':'#3AE1D0',
-        'bg-customskiblue':'#B7DCF1',
-        'bg-customligthviolet':'#CEDAF5',
-        'bg-customblack':'#000',
-        'bg-custumgray':'#22272E',
-        'bg-customligthtext':'#979797'
+        'bg-custom-red':'#F03E42',
+        'bg-custom-yellow':'#FFC403',
+        'bg-custom-green':'#3AE1D0',
+        'bg-custom-skiblue':'#B7DCF1',
+        'bg-custom-ligthviolet':'#CEDAF5',
+        'bg-custom-black':'#000',
+        'bg-custom-gray':'#22272E',
+        'bg-custom-ligthtext':'#979797'
 
-      }
+      },
+      
     },
   },
   plugins: [],

@@ -28,15 +28,14 @@ function Index() {
   }, []);
 
   return (
-    <div className="dark:bg-bg-customgray">
+    <div className="dark:bg-bg-custom-gray">
       <Sliders />
       <Title text="Ultimos Post" />
-      <hr className="w-9/12 mx-auto" />
 
-      <div className="flex flex-wrap dark:bg-bg-custumgray">
-        <div className="flex flex-wrap justify-around dark:bg-bg-custumgray mt-4 p-6 w-5/6">
+      <div className="flex  flex-wrap dark:bg-bg-custom-gray">
+        <div className="flex flex-wrap justify-around dark:bg-bg-custom-gray mt-4 p-6 w-5/6">
           {posts.map((el) => (
-            <div key={el.id} className="dark:bg-bg-customgray  ">
+            <div key={el.id} className="dark:bg-bg-custom-gray  ">
               <Cards
                 image={el.principal_image}
                 id={el.id}
@@ -52,7 +51,6 @@ function Index() {
         <div className=" w-1/6">
           <SecondNavbar />
         </div>
-
       </div>
     </div>
   );

@@ -20,11 +20,11 @@ function PostList() {
   }, []);
 
   return (
-    <div>
-      <Title />
-      <div className="flex flex-wrap justify-around">
+    <div className="dark:bg-bg-custom-gray" >
+      <Title text='Listado de Posts' />
+      <div className="flex flex-wrap rounded justify-around">
       {Post.map((el) => (
-        <div key={el.id} className="dark:bg-bg-customgray  ">
+        <div key={el.id} className="dark:bg-bg-custom-gray  ">
           <Cards
             image={el.principal_image}
             id={el.id}
