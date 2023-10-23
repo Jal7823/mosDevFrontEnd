@@ -3,6 +3,7 @@ import fetchData from "../../utils/crud";
 import Cards from "../../components/Cards";
 import Title from "../../components/Title";
 
+
 function PostList() {
   const [Post, setPost] = useState([]);
 
