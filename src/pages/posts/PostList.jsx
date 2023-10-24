@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import fetchData from "../../utils/crud";
+import {fetchData} from "../../utils/crud";
 import Cards from "../../components/Cards";
 import Title from "../../components/Title";
 

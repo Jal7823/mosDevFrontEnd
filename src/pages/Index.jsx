@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Cards from "../components/Cards";
 //utils
-import fetchData from "../utils/crud";
+import {fetchData} from "../utils/crud";
 
 //components
 import Title from "../components/Title";
