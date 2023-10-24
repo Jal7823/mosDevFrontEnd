@@ -10,6 +10,8 @@ import Head from "./components/Head";
 import Contact from './pages/contact/Contact'
 import Index from './pages/Index'
 import Details from "./pages/posts/Details";
+import UpDown from "./components/UpDown";
+
 function App() {
   return (
     <Router>
@@ -23,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/details/:id" element={<Details />} />
         </Routes>
+        <UpDown />
       </div>
     </Router>
   );
