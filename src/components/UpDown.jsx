@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function UpDown() {
   const scrollToTop = () => {
