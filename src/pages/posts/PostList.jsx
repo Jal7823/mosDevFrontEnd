@@ -20,7 +20,7 @@ function PostList() {
   }, []);
 
   return (
-    <div className="dark:bg-bg-custom-gray" >
+    <div className="dark:bg-bg-custom-gray h-screen" >
       <Title text='Listado de Posts' />
       <div className="flex flex-wrap rounded justify-around">
       {Post.map((el) => (

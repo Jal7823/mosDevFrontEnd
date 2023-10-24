@@ -12,7 +12,7 @@ import Index from './pages/Index'
 function App() {
   return (
     <Router>
-      <div>
+      <div className="dark:bg-bg-custom-gray">
         <DarkMode />
         <Head />
         <Navbar />
