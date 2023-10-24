@@ -23,8 +23,8 @@ function Details() {
   console.log(Post);
 
   return (
-    <div className="h-screen">
-      <div className="container-fluid rounded dark:text-white h-screen mt-4 p-4">
+    <div className="h-screen dark:bg-bg-custom-gray dark:text-white ">
+      <div className="container-fluid rounded  mt-4 p-4">
         <h3 className="text-3xl m-2 font-bold">{Post.title}</h3>
         <span className="text-bg-custom-ligthtext flex justify-end">
           Autor: {Post.author} / {Post.created_at}
