@@ -1,26 +1,26 @@
-import axios from "axios";
+    import axios from "axios";
 
-const urlBase = 'http://localhost:8000/'
+    const urlBase = 'http://localhost:8000/'
 
-export const fetchData = async (endPoint) => {
-    try {
-        const res = await axios.get(urlBase + endPoint);
-        return res.data;
-    } catch (e) {
-        console.log(e);
-        throw e; 
-    }
-};
+    export const fetchData = async (endPoint) => {
+        try {
+            const res = await axios.get(urlBase + endPoint);
+            return res.data;
+        } catch (e) {
+            console.log(e);
+            throw e; 
+        }
+    };
 
 
-export const getOneData = async (endPoint,id) => {
-    try {
-        const res = await axios.get(urlBase + endPoint + id);
-        return res.data;
-    } catch (e) {
-        console.log(e);
-        throw e; 
-    }
-};
+    export const getOneData = async (endPoint,id) => {
+        try {
+            const res = await axios.get(urlBase + endPoint + id);
+            return res.data;
+        } catch (e) {
+            console.log(e);
+            throw e; 
+        }
+    };
 
-export default {fetchData};
+    export default {fetchData};
