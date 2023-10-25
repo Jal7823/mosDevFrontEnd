@@ -8,7 +8,7 @@ function UpDown() {
   };
 
   return (
-    <div className="flex justify-end">
+    <div className="flex justify-end border-0">
       <button onClick={scrollToTop}>
       <i className="fa fa-arrow-up bg-bg-custom-yellow p-2 rounded-full m-4 sticky bottom-0  text-white" aria-hidden="true"></i>
       </button>

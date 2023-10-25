@@ -43,7 +43,7 @@ function Index() {
                 content={el.content}
                 author={el.author}
                 created_at={el.created_at}
-                link="https://www.google.com"
+                link={`/details/${el.id}`}
               />
             </div>
           ))}

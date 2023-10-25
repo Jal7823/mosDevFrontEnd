@@ -1,24 +1,24 @@
 import {NavLink} from 'react-router-dom'
-import fetchData from '../utils/crud'
+import {fetchData} from '../utils/crud'
 import { useEffect, useState } from 'react'
 
 
 function SecondNavbar() {
 
-  const [Categories, setCategories] = useState([])
+  // const [Categories, setCategories] = useState([])
 
-  useEffect(() => {
-    const fetchDataCategories = async () => {
-      try {
-        const data = await fetchData('post/categorie/');
-        setCategories(data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchDataCategories = async () => {
+  //     try {
+  //       const data = await fetchData('post/categorie/');        
+  //       setCategories(data);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
 
-    fetchDataCategories();
-  }, []);
+  //   fetchDataCategories();
+  // }, []);
 
   
 

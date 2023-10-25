@@ -20,7 +20,6 @@ function Details() {
     data();
   }, []);
 
-  console.log(Post);
 
   return (
     <div className="h-screen dark:bg-bg-custom-gray dark:text-white ">

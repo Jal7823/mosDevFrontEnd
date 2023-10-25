@@ -24,15 +24,19 @@ function Sliders() {
     <img
       key={index}
       className="w-full h-[600px] object-contain"
-      src={image.url} 
+      src={image.url}
       onDragStart={handleDragStart}
       role="presentation"
     />
   ));
 
   return (
-    <div>
-      <AliceCarousel mouseTracking items={imageItems} />
+    <div >
+      <AliceCarousel
+      infinite
+      autoPlay
+      autoPlayInterval={3000}
+      mouseTracking items={imageItems} />
     </div>
   );
 }
