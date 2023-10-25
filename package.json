@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Jal7823.github.io/mosDevFrontEnd",
+  "homepage": "https://Jal7823/mosDevFrontEnd",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
