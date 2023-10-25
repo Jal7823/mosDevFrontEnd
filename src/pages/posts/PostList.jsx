@@ -17,6 +17,7 @@ function PostList() {
       }
     };
     getData();
+    
   }, []);
 
   return (
@@ -32,6 +33,7 @@ function PostList() {
             content={el.content}
             author={el.author}
             created_at={el.created_at}
+            link={`/details/${el.id}`}
           />
         </div>
       ))}
