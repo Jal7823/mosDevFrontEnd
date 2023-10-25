@@ -33,7 +33,6 @@ function Cards({ id, image, title, content, author, created_at, link }) {
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
               </NavLink>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                {/* Muestra el contenido truncado */}
                 <div dangerouslySetInnerHTML={{ __html: truncatedContent }} />
               </p>
               <p className="mb-3 font-normal text-gray-300 dark:text-gray-400">{author}</p>

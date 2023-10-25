@@ -48,7 +48,7 @@ function Index() {
             </div>
           ))}
         </div>
-        <div className=" w-1/6">
+        <div className="w-1/6">
           <SecondNavbar />
         </div>
       </div>

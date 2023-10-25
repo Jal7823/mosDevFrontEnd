@@ -30,9 +30,9 @@ function DarkMode() {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
   return (
-    <div>
+    <div className="">
       <button
-        className="bg-custom-yellow p-2 rounded-full border-0 m-4 text-white fixed z-10 right-0 "
+        className="bg-custom-yellow p-1 rounded-full border-0 m-2 text-white fixed top-[50%] z-10 right-0 "
         id='buttonDarkMode'
         onClick={handleChangeTheme}
       >
