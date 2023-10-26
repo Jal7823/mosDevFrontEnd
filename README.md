@@ -1,5 +1,8 @@
 # React + Vite
 
+
+[![Deploy static content to Pages](https://github.com/Jal7823/mosDevFrontEnd/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/Jal7823/mosDevFrontEnd/actions/workflows/jekyll-gh-pages.yml)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
