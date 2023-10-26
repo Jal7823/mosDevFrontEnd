@@ -4,11 +4,11 @@ function Head() {
   return (
     <div>
       <div className="p-4 text-center bg-white dark:text-white dark:bg-bg-custom-gray flex justify-center ">
-        <NavLink to="/">
+        <NavLink to="">
           <img
             className="m-auto "
             style={{ width: "40px", height: "auto" }}
-            src="public/logo.svg"
+            src="/public/logo.svg"
             alt="Mos Dev"
           />
         </NavLink>
