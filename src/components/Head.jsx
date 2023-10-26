@@ -8,7 +8,7 @@ function Head() {
           <img
             className="m-auto "
             style={{ width: "40px", height: "auto" }}
-            src="/public/logo.svg"
+            src="logo.svg"
             alt="Mos Dev"
           />
         </NavLink>

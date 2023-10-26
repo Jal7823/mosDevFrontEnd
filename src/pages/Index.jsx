@@ -18,6 +18,8 @@ function Index() {
     const getData = async () => {
       try {
         const data = await fetchData("post/");
+        console.log("🚀 ~ file: Index.jsx:21 ~ getData ~ data:", data)
+        
         const lastThreePosts = data.slice(-3);
         setPosts(lastThreePosts);
       } catch (e) {
