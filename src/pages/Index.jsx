@@ -30,7 +30,7 @@ function Index() {
   }, []);
 
   return (
-    <div className="dark:bg-bg-custom-gray">
+    <div className="dark:bg-bg-custom-gray h-screen">
       <Sliders />
       <Title text="Ultimos Post" />
 
