@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 function Head() {
   return (
     <div>
-      <div className="p-4 text-center bg-white dark:text-white dark:bg-bg-custom-gray flex justify-center ">
-        <NavLink to="">
+      <div className=" p-4 text-center bg-white dark:text-white dark:bg-bg-custom-gray flex items-center justify-center ">
+        <NavLink to="/">
           <img
             className="m-auto "
             style={{ width: "40px", height: "auto" }}
