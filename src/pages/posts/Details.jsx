@@ -18,12 +18,11 @@ function Details() {
       }
     };
     data();
-  }, []);
-
+  }, [id]);
 
   return (
-    <div className="h-screen dark:bg-bg-custom-gray dark:text-white ">
-      <div className="container-fluid rounded dark:bg-bg-custom-gray mt-4 p-4">
+    <div className="h-screen dark:bg-bg-custom-gray dark:text-white">
+      <div className="container-fluid rounded dark:bg-bg-custom-gray mt-4 p-4 h-screen">
         <div className="flex justify-between">
           <h3 className="text-3xl m-2 font-bold">{Post.title}</h3>
           <div className="flex justify-end">

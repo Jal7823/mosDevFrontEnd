@@ -1,6 +1,6 @@
     import axios from "axios";
 
-    const urlBase = 'https://mosdev.1.us-1.fl0.io/'
+    const urlBase = 'http://localhost:8000/'
 
     export const fetchData = async (endPoint) => {
         try {
