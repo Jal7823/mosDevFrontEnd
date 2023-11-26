@@ -23,7 +23,7 @@ function Sliders() {
   const imageItems = Images.map((image, index) => (
     <img
       key={index}
-      className="w-full h-[600px] object-contain"
+      className="w-screen h-[600px] object-contain"
       src={image.url}
       onDragStart={handleDragStart}
       role="presentation"
@@ -36,7 +36,10 @@ function Sliders() {
       infinite
       autoPlay
       autoPlayInterval={3000}
-      mouseTracking items={imageItems} />
+      mouseTracking items={imageItems} 
+      autoWidth
+      autoHeight
+      />
     </div>
   );
 }
