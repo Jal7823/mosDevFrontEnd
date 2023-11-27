@@ -22,7 +22,7 @@ function DarkMode() {
       document.querySelector("html").classList.remove("dark");
       darkModeIcon.classList.remove("fa-sun");
       darkModeIcon.classList.add("fa-moon");
-      buttonDarkMode.classList.add("bg-bg-custom-gray");
+      buttonDarkMode.classList.add("bg-custom-gray");
     }
   }, [theme]);
 

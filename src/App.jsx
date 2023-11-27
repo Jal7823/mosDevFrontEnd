@@ -19,7 +19,7 @@ function App() {
         <DarkMode />
         <Head />
         <Navbar />
-        <Routes b>
+        <Routes >
           <Route path="/" element={<Index />} />
           <Route path="/postlist" element={<PostList />} />
           <Route path="/contact" element={<Contact />} />

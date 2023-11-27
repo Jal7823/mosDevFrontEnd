@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Cards from "../components/Cards";
 //utils
-import {fetchData} from "../utils/crud";
+import { fetchData } from "../utils/crud";
 
 //components
 import Title from "../components/Title";
@@ -16,15 +16,17 @@ function Index() {
 
   useEffect(() => {
     const getData = async () => {
+      console.log("Fetching data...");
       try {
         const data = await fetchData("post/");
-        
+        console.log("Data fetched:", data);
         const lastThreePosts = data.slice(-3);
         setPosts(lastThreePosts);
-      } catch (e) {
-        console.log(e);
+      } catch (error) {
+        console.error("Error fetching data:", error);
       }
     };
+
     getData();
   }, []);
 
@@ -34,7 +36,7 @@ function Index() {
       <Title text="Ultimos Post" />
 
       <div className="flex  flex-wrap dark:bg-bg-custom-gray">
-        <div className="flex flex-wrap justify-around dark:bg-bg-custom-gray mt-4 p-6 w-5/6">
+        <div className="flex flex-wrap justify-around dark:bg-bg-custom-gray mt-4 p-6 w-screen">
           {posts.map((el) => (
             <div key={el.id} className="dark:bg-bg-custom-gray  ">
               <Cards

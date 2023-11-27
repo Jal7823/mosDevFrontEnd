@@ -22,11 +22,13 @@ function Cards({ id, image, title, content, author, created_at, link }) {
 
   return (
     <>
-      <div className="container">
-        <div className="flex">
+      <div className="container dark:bg-bg-custom-gray h-screen">
+        <div className="flex dark:bg-bg-custom-gray h-screen">
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <NavLink to={`/details/${id}`}>
-              <img className="rounded-t-lg" src={image} alt={title} />
+              <div className="max-h-72 object-cover">
+              <img className="rounded-t-lg w-full h-[300px] object-cover " src={image} alt={title} />
+              </div>
             </NavLink>
             <div className="p-5">
               <NavLink to={`/details/${id}`}>

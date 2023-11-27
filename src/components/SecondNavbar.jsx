@@ -22,7 +22,7 @@ function SecondNavbar() {
 
   return (
     <>
-      <div className="dark:bg-bg-custom-gray dark:text-white text-center border border-gray-200 rounded-lg shadow m-2 hidden md:block">
+      <div className="dark:bg-bg-custom-gray dark:text-white text-center  rounded-lg shadow m-2 hidden md:block">
         {Categories.map((el) => (
           <ul key={el.id} className="flex flex-col justify-center fw-bold p-4">
             <p className="text-3xl text-black"></p>

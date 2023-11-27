@@ -23,23 +23,23 @@ function Sliders() {
   const imageItems = Images.map((image, index) => (
     <img
       key={index}
-      className="w-screen h-[600px] object-contain"
+      className="w-screen h-[600px] object-cover"
       src={image.url}
       onDragStart={handleDragStart}
-      role="presentation"
+      alt={`Slider ${index}`}
+      style={{ margin: 0, padding: 0 }}
     />
   ));
 
   return (
-    <div >
+    <div style={{ width: "100vw" }} >
       <AliceCarousel
       infinite
       autoPlay
       autoPlayInterval={3000}
       mouseTracking items={imageItems} 
-      autoWidth
-      autoHeight
-      />
+      
+/>
     </div>
   );
 }
