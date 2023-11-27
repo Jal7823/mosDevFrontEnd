@@ -23,7 +23,7 @@ function Cards({ id, image, title, content, author, created_at, link }) {
   return (
     <>
       <div className="container dark:bg-bg-custom-gray h-screen">
-        <div className="flex dark:bg-bg-custom-gray h-screen">
+        <div className="flex dark:bg-bg-custom-gray ">
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <NavLink to={`/details/${id}`}>
               <div className="max-h-72 object-cover">
