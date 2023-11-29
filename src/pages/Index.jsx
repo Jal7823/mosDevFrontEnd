@@ -1,6 +1,6 @@
 // Index.jsx
 import { useEffect, useState } from "react";
-import Cards from "../components/Cards";
+import SecondCards from "../components/SecondCards";
 //utils
 import { fetchData } from "../utils/crud";
 
@@ -19,7 +19,6 @@ function Index() {
       console.log("Fetching data...");
       try {
         const data = await fetchData("post/");
-        console.log("Data fetched:", data);
         const lastThreePosts = data.slice(-3);
         setPosts(lastThreePosts);
       } catch (error) {
@@ -35,11 +34,11 @@ function Index() {
       <Sliders />
       <Title text="Ultimos Post" />
 
-      <div className="flex  flex-wrap dark:bg-bg-custom-gray">
-        <div className="flex flex-wrap justify-around dark:bg-bg-custom-gray mt-4 p-6 w-screen">
+      <div className="flex flex-wrap dark:bg-bg-custom-gray">
+        <div className="flex flex-col justify-around dark:bg-bg-custom-gray mt-2 p-6 w-full">
           {posts.map((el) => (
-            <div key={el.id} className="dark:bg-bg-custom-gray  ">
-              <Cards
+            <div key={el.id} className="dark:bg-bg-custom-gray mx-auto ">
+              <SecondCards
                 image={el.principal_image}
                 id={el.id}
                 title={el.title}
