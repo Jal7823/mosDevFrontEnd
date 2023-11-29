@@ -35,9 +35,9 @@ function Index() {
       <Title text="Ultimos Post" />
 
       <div className="flex flex-wrap dark:bg-bg-custom-gray">
-        <div className="flex flex-col justify-around dark:bg-bg-custom-gray mt-2 p-6 w-full">
+        <div className="flex flex-col  dark:bg-bg-custom-gray mt-2 p-6 w-full">
           {posts.map((el) => (
-            <div key={el.id} className="dark:bg-bg-custom-gray mx-auto ">
+            <div key={el.id} className="dark:bg-bg-custom-gray  ">
               <SecondCards
                 image={el.principal_image}
                 id={el.id}

@@ -21,7 +21,7 @@ function SecondCards({ id, image, title, content, author, created_at, link }) {
 
   return (
     <>
-      <div className="container dark:bg-bg-custom-gray h-screen">
+      <div className="container dark:bg-bg-custom-gray   mt-6">
         <div className="flex flex-col-1 justify-center dark:bg-bg-custom-gray ">
           <div className="w-screen bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <NavLink to={`/details/${id}`}>
