@@ -7,7 +7,6 @@ import { fetchData } from "../utils/crud";
 //components
 import Title from "../components/Title";
 import Sliders from "../components/Sliders";
-import SecondNavbar from "../components/SecondNavbar";
 
 //pages
 
@@ -34,8 +33,8 @@ function Index() {
       <Sliders />
       <Title text="Ultimos Post" />
 
-      <div className="flex flex-wrap dark:bg-bg-custom-gray">
-        <div className="flex flex-col  dark:bg-bg-custom-gray mt-2 p-6 w-full">
+      <div className="flex flex-wrap dark:bg-bg-custom-gray ">
+        <div className="flex flex-col items-center  dark:bg-bg-custom-gray mt-2 p-6 w-screen ">
           {posts.map((el) => (
             <div key={el.id} className="dark:bg-bg-custom-gray  ">
               <SecondCards
@@ -50,9 +49,7 @@ function Index() {
             </div>
           ))}
         </div>
-        {/* <div className="w-1/6">
-          <SecondNavbar />
-        </div> */}
+       
       </div>
     </div>
   );
