@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const urlBase = "https://moisesm23.pythonanywhere.com/";
+// const urlBase = "http://localhost:8000/";
 
 export const fetchData = async (endPoint) => {
   try {

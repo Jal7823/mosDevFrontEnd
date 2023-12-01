@@ -15,7 +15,8 @@ import UpDown from "./components/UpDown";
 function App() {
   return (
     <Router basename="/mosDevFrontEnd/">
-      <div className="dark:bg-bg-custom-gray h-screen">
+    {/* <Router> */}
+      <div className="dark:bg-bg-custom-gray h-screen ">
         <DarkMode />
         <Navbar />
         <Routes >
